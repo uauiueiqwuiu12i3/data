@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int K,n;
+    cout<<"podaj ilosc kszek";
+    cin >> n;
+   if (n > 1000) {  
+     K=10;   
+    
+} else if (n < 1000 and n > 500) {
+    K=12;
+    
+} else if (n < 500 and n > 0) { 
+    K=15;
+    
+}else
+K=0;
+cout << "Koszt wydrk " << n << " kszek: " << n*K;
+
+ 
+    return 0;

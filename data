@@ -1,0 +1,93 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int rok, miesiac, dzien;
+
+
+cout<<"Podaj rok: "; 
+cin>>rok;	
+cout<<"Podaj miesiac: "; 
+cin>>miesiac;	
+cout<<"Podaj dzien: "; 
+cin>>dzien;	
+if(rok>0) 
+{
+  if(miesiac>0 && miesiac<13) 
+  {
+    if(miesiac==1 || miesiac==3 || miesiac==5 || miesiac==7 || miesiac==8 || miesiac==10 || miesiac==12)
+    {
+      if(dzien>0 && dzien<32) 
+      {
+        cout<<"data jest poprawn"<<endl; 
+      }
+      else
+      {
+        cout<<"data mie jest poprawn"<<endl; 
+      }
+    } 
+    else 
+    {
+      if(miesiac==4 || miesiac==6 || miesiac==9 || miesiac==11)
+      {
+        if(dzien>0 && dzien<31) 
+        {
+          cout<<"data jest poprawn"<<endl; 
+        }
+        else
+        {
+          cout<<"data mie jest poprawn"<<endl; 
+        }
+      }
+      else 
+      {
+        if(miesiac==2)
+        {
+          if((rok%100)==0 || (rok%4)==0) 
+          {
+          if(dzien>0 && dzien<30) 
+            {
+              cout<<"data jest poprawn"<<endl;  
+            }
+            else
+            {
+              cout<<"data nie jest poprawn"<<endl;
+            }
+          }
+          else 
+          {
+            if(dzien>0 && dzien<29) 
+            {
+              cout<<"data jest poprawn"<<endl; 
+            }
+            else
+            {
+              cout<<"data nie jest poprawn"<<endl; 
+            } 
+          }
+        }
+      }
+    }
+  }
+  else 
+  {
+    cout<<"data nie jest poprawn"<<endl;
+  }
+}
+else 
+{
+  cout<<"data nie jest poprawn"<<endl;
+}
+
+    return 0;
+}

@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -22,3 +23,4 @@ cout << "Koszt wydrk " << n << " kszek: " << n*K;
 
  
     return 0;
+}
